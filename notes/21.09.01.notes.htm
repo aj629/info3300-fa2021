@@ -35,7 +35,7 @@
     </p>
     
   
-    <h5>HTML for today:</h5>
+    <h5>HTML for today: </h5>
 
     <!-- This block will be automatically filled with syntax-highlighted code from the script below -->
     <h5>Code for today:</h5>
@@ -48,6 +48,11 @@
     <!--- Code for today's class --->
     <script id="notes1">
     
+      // forgot to mention NAN last class -- special case in number for things 
+      // arent numbers (e.g doing math with null or undefined)
+      console.log(undefined / 2);
+      console.log(Number("1,000"));
+      console.log(typeof(NAN));
     
     
       // * Let's talk JSON
@@ -135,6 +140,8 @@
         return "red";
       }
       console.log( favoriteColor() );
+      console.log('HI');
+      console.log(typeof(favoriteColor));
       // Note that we can use favoriteColor() *above* the function declaration because it is also hoisted
       // This only works with the *function name() { }* style function declaration
       //   There are going to be some other cases this term where *function name() { }* declarations are special
